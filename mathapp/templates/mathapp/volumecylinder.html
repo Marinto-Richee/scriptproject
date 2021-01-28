@@ -1,0 +1,49 @@
+{% load static %}
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <title>MATHEMATICAL OPERATIONS</title>
+    <link rel="stylesheet" href="{% static 'css/script.css' %}">
+
+</head>
+
+
+<body>
+    <div class="container">
+        <div class="formview">
+            <div class="banner">
+                VOLUME OF A CYLINDER
+            </div>
+            <div class="menu">
+                <div class="menuitem"><a href="/add/">Area of Circle</a></div>
+            </div>
+            <div class="content">
+                <form action="volume" method="GET">
+                    {% csrf_token %}
+                    <div class="forminput">
+                        <label for="radiusc">Radius of the Cylinder =</label>
+                        <input type="text" name="radiusc" id="radiusc">
+                    </div>
+                    <div class="forminput">
+                        <label for="height">Height of the Cylinder =</label>
+                        <input type="text" name="height" id="height">
+                    </div>
+                    <div class="forminput">
+                        <button type="button" name="button_vol" id="button_vol">Calculate</button>
+                    </div>
+                    <div class="forminput">
+                        <label for="resultvol">Volume of the Cylinder =</label>
+                        <input type="text" name="resultvol" id="resultvol" readonly>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="/static/js/script2.js"></script>
+</body>
+
+</html>
