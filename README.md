@@ -217,7 +217,7 @@ b2.addEventListener('click',function re2(){
 
 
 ## OUTPUT:
-![output](./static/images/one.jpg)
+![output](./static/images/one.png)
 ![output](./static/images/two.jpg)
 
 
